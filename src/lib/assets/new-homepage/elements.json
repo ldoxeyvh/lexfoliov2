@@ -1,0 +1,14 @@
+[
+    {
+        "main-img": "CARDS_TEST.png",
+        "hover-img": "",
+        "alt": "cards",
+        "dest": "/projects/cards"
+    },
+    {
+        "main-img": "DINODELI_COVER.jpeg",
+        "hover-img": "",
+        "alt": "dinodeli",
+        "dest": "/projects/dinodeli"
+    }
+]
