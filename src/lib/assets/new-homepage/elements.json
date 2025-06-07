@@ -10,5 +10,11 @@
         "hover-img": "",
         "alt": "dinodeli",
         "dest": "/projects/dinodeli"
+    },
+    {
+        "main-img": "MATTHAEI_COVER3.png",
+        "hover-img": "",
+        "alt": "botanical",
+        "dest": "/projects/botanical"
     }
 ]
