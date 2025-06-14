@@ -1,20 +1,38 @@
 [
-    {
-        "main-img": "CARDS_TEST.png",
-        "hover-img": "",
-        "alt": "cards",
-        "dest": "/projects/cards"
-    },
-    {
-        "main-img": "DINODELI_COVER.jpeg",
-        "hover-img": "",
-        "alt": "dinodeli",
-        "dest": "/projects/dinodeli"
-    },
-    {
-        "main-img": "MATTHAEI_COVER3.png",
-        "hover-img": "",
-        "alt": "botanical",
-        "dest": "/projects/botanical"
-    }
+	{
+		"main-img": "TELLTOOL_CoverImage.jpeg",
+		"hover-img": "",
+		"alt": "telltool",
+		"dest": "/projects/telltool"
+	},
+	{
+		"main-img": "RISO_CoverImage.png",
+		"hover-img": "",
+		"alt": "riso",
+		"dest": "/projects/riso"
+	},
+	{
+		"main-img": "CARDS_CoverImage.png",
+		"hover-img": "",
+		"alt": "cards",
+		"dest": "/projects/cards"
+	},
+	{
+		"main-img": "DINODELI_CoverImage.jpeg",
+		"hover-img": "",
+		"alt": "dinodeli",
+		"dest": "/projects/dinodeli"
+	},
+	{
+		"main-img": "AAFF_CoverImage.png",
+		"hover-img": "",
+		"alt": "filmfestival",
+		"dest": "/projects/filmfestival"
+	},
+	{
+		"main-img": "MATTHAEI_CoverImage.jpg",
+		"hover-img": "",
+		"alt": "botanical",
+		"dest": "/projects/botanical"
+	}
 ]
