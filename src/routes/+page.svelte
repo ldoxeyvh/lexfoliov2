@@ -2,6 +2,9 @@
     import { base } from "$app/paths";
     import elements from "$lib/assets/new-homepage/elements.json";
     import { crossfade } from "svelte/transition"; // Note: crossfade not directly related to image loading issue
+    import { layoutState } from '$lib/store.js';
+
+    layoutState.set({ message: 'My Projects' });
 
     // This glob runs at build time.
     // `query: '?url'` correctly tells Vite to give you the path to the built asset.
@@ -32,7 +35,7 @@
     const [send, receive] = crossfade({});
 </script>
 
-<div class="columns-1 lg:columns-2 gap-4 m-4">
+<div class="columns-1 lg:columns-2 gap-4">
     {#each elements as element}
         <a href={`${base}${element["dest"]}`} aria-label={element.alt}>
             <img class="w-full mb-4 border hover:border-3 border-slate-800"

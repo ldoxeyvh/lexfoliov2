@@ -1,5 +1,9 @@
 <script>
     import Me from '$lib/assets/about-me/MEPICTURE.jpg'
+    import { layoutState } from '$lib/store.js';
+
+    layoutState.set({ message: 'About me' });
+
 </script>
 
 <div class="grid grid-cols-2 justify-items-center gap-40">

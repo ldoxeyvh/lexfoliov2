@@ -6,6 +6,7 @@
     import { afterNavigate } from '$app/navigation';
     import { base } from '$app/paths';
     import Logo from '$lib/assets/LEXLOGO-01.svg'
+    import { layoutState } from '$lib/store.js';
 
     let isDropdownHidden = $state(true);
 
@@ -35,23 +36,23 @@
             <a href="{`${base}/`}" class="flex gap-x-10 group">
                 <img src={Logo} alt="logo" class="w-16 h-16"/>
                 <div class="">
-                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">ALEXSEY DACOSTA</span>
+                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">Alexsey daCosta</span>
                     <div class="w-full mt-4 border-b-2 border-slate-800 group-hover:w-[150%] transition-all"></div>
                 </div>
             </a>
             <div></div>
             <div class="col-span-2 grid grid-cols-5 gap-x-4">
                 <a href="{`${base}/portfolio`}" class="group col-span-2">
-                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">PORTFOLIO</span>
+                    <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">My work</span>
                     <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
                 </a>
                 <div class="grid grid-cols-2 gap-x-4 col-span-3">
                     <a href="{`${base}/contact`}" class="group">
-                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">CONTACT</span>
+                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend">Contact</span>
                         <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
                     </a>
                     <a href="{`${base}/about-me`}" class="group">
-                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend whitespace-nowrap">ABOUT ME</span>
+                        <span class="text-xl lg:text-2xl xl:text-3xl text-slate-800 group-hover:font-semibold transition-all font-lexend whitespace-nowrap">About me</span>
                         <div class="w-2/3 group-hover:w-full mt-4 border-b-2 border-slate-800 transition-all"></div>
                     </a>
                 </div>
@@ -82,9 +83,13 @@
         <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
         </div> -->
+
+        <div class="flex items-center mb-15">
+        <div class="text-xl font-lexend text-nowrap">{$layoutState.message}</div> <div class="ml-10 w-full border-b-2 border-slate-800"></div>
+        </div>
         {@render children()}
         <!-- footer -->
-        
+
     </div>
 </div>
 
